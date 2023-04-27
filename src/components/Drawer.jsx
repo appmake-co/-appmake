@@ -1,16 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Box,
   IconButton,
-  Button,
-  List,
-  Container,
   SwipeableDrawer,
-  Typography,
+  Typography
 } from "@mui/material";
-
-import { Panel } from "../index";
-import { ArrowBack, Clear, Close } from "@mui/icons-material";
+import { ArrowBack } from "@mui/icons-material";
 
 const Drawer = ({
   open,
@@ -23,7 +18,6 @@ const Drawer = ({
   actions,
   ...props
 }) => {
-  const classes = useStyles({ width });
 
   return (
     <SwipeableDrawer
