@@ -463,8 +463,7 @@ var useResource = function useResource(_ref) {
       return _regeneratorRuntime().wrap(function _callee8$(_context8) {
         while (1) switch (_context8.prev = _context8.next) {
           case 0:
-            console.log("CREATE WITH FILES");
-            _context8.prev = 1;
+            _context8.prev = 0;
             config = {
               headers: {
                 "content-type": "multipart/form-data"
@@ -478,9 +477,9 @@ var useResource = function useResource(_ref) {
                 formData.append("".concat(name, "[").concat(key, "]"), resourceWithFiles[key]);
               }
             });
-            _context8.next = 9;
+            _context8.next = 8;
             return api.post(url, formData, config);
-          case 9:
+          case 8:
             res = _context8.sent;
             if (res !== null && res !== void 0 && (_res$data3 = res.data) !== null && _res$data3 !== void 0 && _res$data3.id) {
               setResource(res.data);
@@ -488,19 +487,19 @@ var useResource = function useResource(_ref) {
               setId(res.data.id);
             }
             return _context8.abrupt("return", res.data);
-          case 14:
-            _context8.prev = 14;
-            _context8.t0 = _context8["catch"](1);
+          case 13:
+            _context8.prev = 13;
+            _context8.t0 = _context8["catch"](0);
             handleErrors(_context8.t0);
-          case 17:
-            _context8.prev = 17;
+          case 16:
+            _context8.prev = 16;
             hideLoading();
-            return _context8.finish(17);
-          case 20:
+            return _context8.finish(16);
+          case 19:
           case "end":
             return _context8.stop();
         }
-      }, _callee8, null, [[1, 14, 17, 20]]);
+      }, _callee8, null, [[0, 13, 16, 19]]);
     }));
     return function createWithFiles(_x10) {
       return _ref9.apply(this, arguments);

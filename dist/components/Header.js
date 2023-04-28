@@ -37,7 +37,6 @@ var Header = function Header(_ref) {
   var handleLogoClick = function handleLogoClick() {
     return handleClick("/");
   };
-  console.log("Header:", menuItems);
   return /*#__PURE__*/_react.default.createElement(_material.Box, {
     sx: _objectSpread(_objectSpread({}, sx.root), styles)
   }, /*#__PURE__*/_react.default.createElement(_material.AppBar, {

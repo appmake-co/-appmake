@@ -17,8 +17,6 @@ const Header = ({ styles, logo, menuItems, ...props }) => {
 
   const handleLogoClick = () => handleClick("/");
 
-  console.log("Header:", menuItems)
-
   return (
     <Box
       sx={{
