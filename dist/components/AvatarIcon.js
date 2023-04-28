@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
-var _propTypes = _interopRequireDefault(require("prop-types"));
 var _material = require("@mui/material");
 var _index = require("../index");
 var _excluded = ["size"];
@@ -29,9 +28,6 @@ var AvatarIcon = function AvatarIcon(_ref) {
       width: size
     })
   }, /*#__PURE__*/_react.default.createElement(_index.Icon, props));
-};
-AvatarIcon.propTypes = {
-  size: _propTypes.default.number
 };
 var _default = AvatarIcon;
 exports.default = _default;

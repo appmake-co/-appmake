@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _propTypes = _interopRequireDefault(require("prop-types"));
+var _react = _interopRequireDefault(require("react"));
 var _material = require("@mui/material");
 var _excluded = ["xs", "sm", "md", "lg", "xl"];
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -22,24 +22,24 @@ var GridViewSkeleton = function GridViewSkeleton(_ref) {
     _ref$xl = _ref.xl,
     xl = _ref$xl === void 0 ? 2 : _ref$xl,
     props = _objectWithoutProperties(_ref, _excluded);
-  return /*#__PURE__*/React.createElement(_material.Grid, {
+  return /*#__PURE__*/_react.default.createElement(_material.Grid, {
     item: true,
     xs: xs,
     sm: sm,
     md: md,
     lg: lg,
     xl: xl
-  }, /*#__PURE__*/React.createElement(_material.Card, {
+  }, /*#__PURE__*/_react.default.createElement(_material.Card, {
     elevation: 0,
     sx: sx.root
-  }, /*#__PURE__*/React.createElement(_material.CardActionArea, null, /*#__PURE__*/React.createElement(_material.Skeleton, {
+  }, /*#__PURE__*/_react.default.createElement(_material.CardActionArea, null, /*#__PURE__*/_react.default.createElement(_material.Skeleton, {
     variant: "rectangular",
     width: "100%",
     height: 140
-  }), /*#__PURE__*/React.createElement(_material.CardContent, null, /*#__PURE__*/React.createElement(_material.Skeleton, {
+  }), /*#__PURE__*/_react.default.createElement(_material.CardContent, null, /*#__PURE__*/_react.default.createElement(_material.Skeleton, {
     height: 20,
     width: "60%"
-  }), /*#__PURE__*/React.createElement(_material.Skeleton, {
+  }), /*#__PURE__*/_react.default.createElement(_material.Skeleton, {
     height: 20,
     width: "80%"
   })))));

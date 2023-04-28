@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _propTypes = _interopRequireDefault(require("prop-types"));
+var _react = _interopRequireDefault(require("react"));
 var _material = require("@mui/material");
 var _excluded = ["item", "handleClick", "selected", "objectFit", "xs", "sm", "md", "lg", "xl", "actions"];
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -34,21 +34,21 @@ var GridViewItem = function GridViewItem(_ref) {
     xl = _ref$xl === void 0 ? 2 : _ref$xl,
     actions = _ref.actions,
     props = _objectWithoutProperties(_ref, _excluded);
-  return /*#__PURE__*/React.createElement(_material.Grid, {
+  return /*#__PURE__*/_react.default.createElement(_material.Grid, {
     item: true,
     xs: xs,
     sm: sm,
     md: md,
     lg: lg,
     xl: xl
-  }, /*#__PURE__*/React.createElement(_material.Card, {
+  }, /*#__PURE__*/_react.default.createElement(_material.Card, {
     elevation: 0,
     sx: _objectSpread(_objectSpread({}, sx.root), selected && sx.selected)
-  }, /*#__PURE__*/React.createElement(_material.CardActionArea, {
+  }, /*#__PURE__*/_react.default.createElement(_material.CardActionArea, {
     onClick: handleClick ? function () {
       return handleClick(item);
     } : null
-  }, /*#__PURE__*/React.createElement(_material.CardMedia, {
+  }, /*#__PURE__*/_react.default.createElement(_material.CardMedia, {
     component: "img",
     height: "140",
     image: item.primary_image,
@@ -56,11 +56,11 @@ var GridViewItem = function GridViewItem(_ref) {
     sx: {
       objectFit: objectFit
     }
-  }), /*#__PURE__*/React.createElement(_material.CardContent, null, /*#__PURE__*/React.createElement(_material.Typography, {
+  }), /*#__PURE__*/_react.default.createElement(_material.CardContent, null, /*#__PURE__*/_react.default.createElement(_material.Typography, {
     variant: "body1"
-  }, item.primary_text), /*#__PURE__*/React.createElement(_material.Typography, {
+  }, item.primary_text), /*#__PURE__*/_react.default.createElement(_material.Typography, {
     variant: "body2"
-  }, item.secondary_text))), actions && /*#__PURE__*/React.createElement(_material.CardActions, null, actions)));
+  }, item.secondary_text))), actions && /*#__PURE__*/_react.default.createElement(_material.CardActions, null, actions)));
 };
 var _default = GridViewItem;
 exports.default = _default;

@@ -4,20 +4,20 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _propTypes = _interopRequireDefault(require("prop-types"));
+var _react = _interopRequireDefault(require("react"));
 var _index = require("../index");
 var _excluded = ["url", "defaultQuery", "enableSearch", "enableInfiniteLoad", "enableLoadMore", "spacing", "numSkeletons", "renderItem", "renderSkeleton"];
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 var handleRenderItem = function handleRenderItem(item, i) {
-  return /*#__PURE__*/React.createElement(_index.GridViewItem, {
+  return /*#__PURE__*/_react.default.createElement(_index.GridViewItem, {
     key: i,
     item: item
   });
 };
 var handleRenderSkeleton = function handleRenderSkeleton(_, i) {
-  return /*#__PURE__*/React.createElement(_index.GridViewSkeleton, {
+  return /*#__PURE__*/_react.default.createElement(_index.GridViewSkeleton, {
     key: i
   });
 };
@@ -40,7 +40,7 @@ var GridView = function GridView(_ref) {
     _ref$renderSkeleton = _ref.renderSkeleton,
     renderSkeleton = _ref$renderSkeleton === void 0 ? handleRenderSkeleton : _ref$renderSkeleton,
     props = _objectWithoutProperties(_ref, _excluded);
-  return /*#__PURE__*/React.createElement(_index.FindManyList, {
+  return /*#__PURE__*/_react.default.createElement(_index.FindManyList, {
     url: url,
     spacing: spacing,
     variant: "grid",
