@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Avatar } from "@mui/material";
 import { Icon } from "../index";
 
@@ -16,10 +15,6 @@ const AvatarIcon = ({ size = 32, ...props }) => {
       <Icon {...props} />
     </Avatar>
   );
-};
-
-AvatarIcon.propTypes = {
-  size: PropTypes.number,
 };
 
 export default AvatarIcon;

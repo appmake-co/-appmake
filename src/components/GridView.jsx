@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import React from 'react'
 import { GridViewItem, GridViewSkeleton, FindManyList } from "../index";
 
 const handleRenderItem = (item, i) => <GridViewItem key={i} item={item} />;

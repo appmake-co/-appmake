@@ -22,6 +22,7 @@ export { default as LoadMore } from "./components/LoadMore";
 export { default as ListView } from "./components/ListView";
 export { default as ListViewItem } from "./components/ListViewItem";
 export { default as ListViewSkeleton } from "./components/ListViewSkeleton";
+export { default as Meta } from "./components/Meta";
 export { default as MenuItem } from "./components/MenuItem";
 export { default as Modal } from "./components/Modal";
 export { default as MobileMenu } from "./components/MobileMenu";

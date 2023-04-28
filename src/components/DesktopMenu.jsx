@@ -1,11 +1,10 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
-import { MENU_ITEMS } from "../lib/constants";
 
-const DesktopMenu = ({ styles, handleClick, ...rest }) => {
+const DesktopMenu = ({ styles, menuItems, handleClick, ...rest }) => {
   return (
     <Box sx={{ ...sx.root, ...styles }}>
-      {MENU_ITEMS.map((item, i) => (
+      {menuItems.map((item, i) => (
         <Button
           key={i}
           sx={sx.menuItem}
