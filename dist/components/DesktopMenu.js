@@ -23,7 +23,7 @@ var DesktopMenu = function DesktopMenu(_ref) {
     rest = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/_react.default.createElement(_material.Box, {
     sx: _objectSpread(_objectSpread({}, sx.root), styles)
-  }, menuItems.map(function (item, i) {
+  }, menuItems === null || menuItems === void 0 ? void 0 : menuItems.map(function (item, i) {
     return /*#__PURE__*/_react.default.createElement(_material.Button, {
       key: i,
       sx: sx.menuItem,

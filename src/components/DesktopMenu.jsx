@@ -4,7 +4,7 @@ import { Box, Button } from "@mui/material";
 const DesktopMenu = ({ styles, menuItems, handleClick, ...rest }) => {
   return (
     <Box sx={{ ...sx.root, ...styles }}>
-      {menuItems.map((item, i) => (
+      {menuItems?.map((item, i) => (
         <Button
           key={i}
           sx={sx.menuItem}
