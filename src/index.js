@@ -41,21 +41,21 @@ export { default as ImageModal } from "./components/ImageModal";
 export { default as VideoModal } from "./components/VideoModal";
 export { default as TextModal } from "./components/TextModal";
 
-// Forms
-export { default as ArrayInput } from "./components/forms/ArrayInput";
-export { default as AttachmentInput } from "./components/forms/AttachmentInput";
-export { default as CheckboxInput } from "./components/forms/CheckboxInput";
-export { default as Form } from "./components/forms/Form";
-export { default as FormInput } from "./components/forms/FormInput";
-export { default as FileInput } from "./components/forms/FileInput";
-export { default as ImageInput } from "./components/forms/ImageInput";
-export { default as JSONInput } from "./components/forms/JSONInput";
-export { default as RadioInput } from "./components/forms/RadioInput";
-export { default as RatingInput } from "./components/forms/RatingInput";
-export { default as SearchInput } from "./components/forms/SearchInput";
-export { default as SelectInput } from "./components/forms/SelectInput";
-export { default as SwitchInput } from "./components/forms/SwitchInput";
-export { default as TextInput } from "./components/forms/TextInput";
+// Form inputs
+export { default as ArrayInput } from "./components/inputs/ArrayInput";
+export { default as AttachmentInput } from "./components/inputs/AttachmentInput";
+export { default as CheckboxInput } from "./components/inputs/CheckboxInput";
+export { default as Form } from "./components/inputs/Form";
+export { default as FormInput } from "./components/inputs/FormInput";
+export { default as FileInput } from "./components/inputs/FileInput";
+export { default as ImageInput } from "./components/inputs/ImageInput";
+export { default as JSONInput } from "./components/inputs/JSONInput";
+export { default as RadioInput } from "./components/inputs/RadioInput";
+export { default as RatingInput } from "./components/inputs/RatingInput";
+export { default as SearchInput } from "./components/inputs/SearchInput";
+export { default as SelectInput } from "./components/inputs/SelectInput";
+export { default as SwitchInput } from "./components/inputs/SwitchInput";
+export { default as TextInput } from "./components/inputs/TextInput";
 
 // Auth components
 export { default as UserAvatar } from "./components/auth/UserAvatar";
