@@ -17,6 +17,8 @@ const Header = ({ styles, logo, menuItems, ...props }) => {
 
   const handleLogoClick = () => handleClick("/");
 
+  console.log("Header:", menuItems)
+
   return (
     <Box
       sx={{
@@ -41,10 +43,10 @@ const Header = ({ styles, logo, menuItems, ...props }) => {
         </Toolbar>
       </AppBar>
       <MobileMenu
-        menuItems={menuItems}
         open={menuOpen}
         handleClick={handleClick}
         toggleMenu={toggleMenu}
+        menuItems={menuItems}
       />
     </Box>
   );

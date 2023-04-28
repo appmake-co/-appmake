@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Button } from "@mui/material";
 
 const DesktopMenu = ({ styles, menuItems, handleClick, ...rest }) => {
+  console.log("DesktopMenu:", menuItems)
   return (
     <Box sx={{ ...sx.root, ...styles }}>
       { menuItems && 
