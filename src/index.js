@@ -101,18 +101,17 @@ export { default as FilterTypeInput } from "./components/tables/FilterTypeInput"
 export { default as SortedAscIcon } from "./components/tables/SortedAscIcon";
 export { default as SortedDescIcon } from "./components/tables/SortedDescIcon";
 
-
-export { default as Field } from './components/fields/Field'
-export { default as FieldArray } from './components/fields/FieldArray'
-export { default as FieldBoolean } from './components/fields/FieldBoolean'
-export { default as FieldDate } from './components/fields/FieldDate'
-export { default as FieldImage } from './components/fields/FieldImage'
-export { default as FieldJSON } from './components/fields/FieldJSON'
-export { default as FieldText } from './components/fields/FieldText'
-export { default as FieldLink } from './components/fields/FieldLink'
-export { default as FieldParagraph } from './components/fields/FieldParagraph'
-export { default as FieldRating } from './components/fields/FieldRating'
-export { default as FieldVideo } from './components/fields/FieldVideo'
+export { default as Field } from "./components/fields/Field";
+export { default as FieldArray } from "./components/fields/FieldArray";
+export { default as FieldBoolean } from "./components/fields/FieldBoolean";
+export { default as FieldDate } from "./components/fields/FieldDate";
+export { default as FieldImage } from "./components/fields/FieldImage";
+export { default as FieldJSON } from "./components/fields/FieldJSON";
+export { default as FieldText } from "./components/fields/FieldText";
+export { default as FieldLink } from "./components/fields/FieldLink";
+export { default as FieldParagraph } from "./components/fields/FieldParagraph";
+export { default as FieldRating } from "./components/fields/FieldRating";
+export { default as FieldVideo } from "./components/fields/FieldVideo";
 
 // Hooks
 export { default as useAlerts } from "./hooks/useAlerts";
@@ -126,7 +125,7 @@ export { default as useMenu } from "./hooks/useMenu";
 export { default as useResource } from "./hooks/useResource";
 export { default as useResponsive } from "./hooks/useResponsive";
 
-// Context 
+// Context
 export { default as ApiProvider } from "./context/ApiProvider";
 export { default as ApiContext } from "./context/ApiContext";
 export { default as AuthContext } from "./context/AuthContext";

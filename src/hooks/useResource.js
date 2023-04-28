@@ -224,7 +224,7 @@ const useResource = ({
   };
 
   const createWithFiles = async (resourceWithFiles) => {
-    console.log("CREATE WITH FILES")
+    console.log("CREATE WITH FILES");
     try {
       const config = {
         headers: { "content-type": "multipart/form-data" },

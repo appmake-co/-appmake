@@ -1,19 +1,14 @@
 import React from "react";
-import {
-  Box,
-  Card,
-  CardActionArea,
-  Skeleton,
-} from "@mui/material";
+import { Box, Card, CardActionArea, Skeleton } from "@mui/material";
 
-const ImageCarouselSkeleton = ({ height=420,...props }) => {
+const ImageCarouselSkeleton = ({ height = 420, ...props }) => {
   return (
     <Box sx={sx.root}>
       <Card
         elevation={0}
         sx={{
           ...sx.card,
-          height: height
+          height: height,
         }}
       >
         <CardActionArea disableRipple>
@@ -36,6 +31,6 @@ const sx = {
     p: 2,
   },
   card: {
-    width: '100%'
+    width: "100%",
   },
 };

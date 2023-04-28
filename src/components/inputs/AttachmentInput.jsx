@@ -7,11 +7,24 @@ import { File } from "react-feather";
 
 const IMAGE_WIDTH = 140;
 
-const RenderAttachment = ({ src, size, onDelete, variant, alt='', ...props }) => {
+const RenderAttachment = ({
+  src,
+  size,
+  onDelete,
+  variant,
+  alt = "",
+  ...props
+}) => {
   return (
     <Box>
       {variant == "image" && (
-        <Image alt={alt} style={sx.image} height={size} width={size} src={src} />
+        <Image
+          alt={alt}
+          style={sx.image}
+          height={size}
+          width={size}
+          src={src}
+        />
       )}
       {variant == "file" && (
         <Avatar variant="rounded" sx={sx.avatar}>
@@ -49,7 +62,7 @@ const AttachmentInput = ({
     onChange({
       target: {
         name: name,
-        value: file
+        value: file,
       },
     });
   };
@@ -59,7 +72,7 @@ const AttachmentInput = ({
       onChange({
         target: {
           name: name,
-          value: null
+          value: null,
         },
       });
     }

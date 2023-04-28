@@ -4,7 +4,6 @@ import { MenuItem } from "../index";
 import { MENU_ITEMS } from "../lib/constants";
 
 const MobileMenu = ({ open, toggleMenu, handleClick }) => {
-
   return (
     <SwipeableDrawer
       open={open}

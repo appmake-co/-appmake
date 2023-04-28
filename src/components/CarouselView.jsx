@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  FindManyList,
-  CarouselViewItem,
-  CarouselViewSkeleton,
-} from "../index";
+import { FindManyList, CarouselViewItem, CarouselViewSkeleton } from "../index";
 
 const handleRenderItem = (item, i) => <CarouselViewItem key={i} item={item} />;
 

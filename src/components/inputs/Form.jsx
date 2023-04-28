@@ -3,7 +3,6 @@ import { Box, Button } from "@mui/material";
 import { useResource } from "../../index";
 import { FormInput } from "../../index";
 
-
 const Form = ({ id, fields, name, url, validationSchema, ...props }) => {
   const {
     loading,
@@ -50,7 +49,7 @@ const Form = ({ id, fields, name, url, validationSchema, ...props }) => {
   return (
     <Box sx={sx.root}>
       {fields.map((field, index) => (
-        <FormInput        
+        <FormInput
           key={index}
           variant={field.variant}
           name={field.name}

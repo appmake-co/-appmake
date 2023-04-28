@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Box,
-  IconButton,
-  SwipeableDrawer,
-  Typography
-} from "@mui/material";
+import { Box, IconButton, SwipeableDrawer, Typography } from "@mui/material";
 import { ArrowBack } from "@mui/icons-material";
 
 const Drawer = ({
@@ -18,7 +13,6 @@ const Drawer = ({
   actions,
   ...props
 }) => {
-
   return (
     <SwipeableDrawer
       open={open}

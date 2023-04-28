@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext } from "react";
 import { useRouter } from "next/router";
 import { AppBar, Box, Button, IconButton, Toolbar } from "@mui/material";
 import { Menu } from "@mui/icons-material";
@@ -27,9 +27,7 @@ const Header = ({ styles, logo, ...props }) => {
       <AppBar color="inherit" position="fixed" elevation={0}>
         <Toolbar>
           <Box sx={sx.container}>
-            <Button onClick={handleLogoClick}>
-              { logo }              
-            </Button>
+            <Button onClick={handleLogoClick}>{logo}</Button>
           </Box>
           <Box sx={sx.menu}>
             <DesktopMenu handleClick={handleClick} />

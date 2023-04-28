@@ -24,7 +24,6 @@ const SortableListItem = ({
   );
 };
 
-
 export default SortableListItem;
 
 const sx = {

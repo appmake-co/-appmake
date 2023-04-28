@@ -1,5 +1,5 @@
 import React from "react";
-import { CellExpand, CellText, CellTextExpanded } from "../../index"
+import { CellExpand, CellText, CellTextExpanded } from "../../index";
 
 const CellJSON = ({ value, ...props }) => {
   let formattedValue = value;
