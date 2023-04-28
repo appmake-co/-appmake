@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Box, List, SwipeableDrawer } from "@mui/material";
 import { MenuItem } from "../index";
-import { MENU_ITEMS } from "../lib/constants";
 
-const MobileMenu = ({ open, toggleMenu, handleClick }) => {
+const MobileMenu = ({ open, menuItems, toggleMenu, handleClick }) => {
   return (
     <SwipeableDrawer
       open={open}
@@ -20,7 +19,7 @@ const MobileMenu = ({ open, toggleMenu, handleClick }) => {
         height="100%"
       >
         <List sx={sx.list} component="nav">
-          {MENU_ITEMS.map(({ value, label }, idx) => (
+          {menuItems?.map(({ value, label }, idx) => (
             <MenuItem
               key={idx}
               value={value}
