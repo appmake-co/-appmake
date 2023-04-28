@@ -549,6 +549,12 @@ Object.defineProperty(exports, "Pagination", {
     return _Pagination.default;
   }
 });
+Object.defineProperty(exports, "Panel", {
+  enumerable: true,
+  get: function get() {
+    return _Panel.default;
+  }
+});
 Object.defineProperty(exports, "Placeholder", {
   enumerable: true,
   get: function get() {
@@ -750,6 +756,7 @@ var _ListViewSkeleton = _interopRequireDefault(require("./components/ListViewSke
 var _MenuItem = _interopRequireDefault(require("./components/MenuItem"));
 var _Modal = _interopRequireDefault(require("./components/Modal"));
 var _MobileMenu = _interopRequireDefault(require("./components/MobileMenu"));
+var _Panel = _interopRequireDefault(require("./components/Panel"));
 var _Placeholder = _interopRequireDefault(require("./components/Placeholder"));
 var _Section = _interopRequireDefault(require("./components/Section"));
 var _SortableList = _interopRequireDefault(require("./components/SortableList"));

@@ -25,6 +25,7 @@ export { default as ListViewSkeleton } from "./components/ListViewSkeleton";
 export { default as MenuItem } from "./components/MenuItem";
 export { default as Modal } from "./components/Modal";
 export { default as MobileMenu } from "./components/MobileMenu";
+export { default as Panel } from "./components/Panel";
 export { default as Placeholder } from "./components/Placeholder";
 export { default as Section } from "./components/Section";
 export { default as SortableList } from "./components/SortableList";
