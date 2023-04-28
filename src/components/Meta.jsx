@@ -13,4 +13,4 @@ const Meta = ({ title, description, keywords, src, ...props }) => {
   );
 };
 
-export default Meta
+export default Meta;

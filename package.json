@@ -1,6 +1,6 @@
 {
   "name": "appmake-mui",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Appmake MUI UI component library",
   "main": "index.js",
   "scripts": {
