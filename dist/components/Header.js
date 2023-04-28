@@ -10,7 +10,7 @@ var _router = require("next/router");
 var _material = require("@mui/material");
 var _iconsMaterial = require("@mui/icons-material");
 var _index = require("../index");
-var _excluded = ["styles", "logo"];
+var _excluded = ["styles", "logo", "menuItems"];
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -23,6 +23,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 var Header = function Header(_ref) {
   var styles = _ref.styles,
     logo = _ref.logo,
+    menuItems = _ref.menuItems,
     props = _objectWithoutProperties(_ref, _excluded);
   var router = (0, _router.useRouter)();
   var _useContext = (0, _react.useContext)(_index.AppContext),
@@ -49,12 +50,14 @@ var Header = function Header(_ref) {
   }, logo)), /*#__PURE__*/_react.default.createElement(_material.Box, {
     sx: sx.menu
   }, /*#__PURE__*/_react.default.createElement(_index.DesktopMenu, {
+    menuItems: menuItems,
     handleClick: handleClick
   }), /*#__PURE__*/_react.default.createElement(_material.IconButton, {
     color: "primary",
     onClick: toggleMenu,
     size: "large"
   }, /*#__PURE__*/_react.default.createElement(_iconsMaterial.Menu, null))))), /*#__PURE__*/_react.default.createElement(_index.MobileMenu, {
+    menuItems: menuItems,
     open: menuOpen,
     handleClick: handleClick,
     toggleMenu: toggleMenu

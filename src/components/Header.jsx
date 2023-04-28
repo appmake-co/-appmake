@@ -5,7 +5,7 @@ import { Menu } from "@mui/icons-material";
 import { AppContext } from "../index";
 import { DesktopMenu, MobileMenu } from "../index";
 
-const Header = ({ styles, logo, ...props }) => {
+const Header = ({ styles, logo, menuItems, ...props }) => {
   const router = useRouter();
 
   const { menuOpen, setMenuOpen, toggleMenu } = useContext(AppContext);
@@ -30,7 +30,10 @@ const Header = ({ styles, logo, ...props }) => {
             <Button onClick={handleLogoClick}>{logo}</Button>
           </Box>
           <Box sx={sx.menu}>
-            <DesktopMenu handleClick={handleClick} />
+            <DesktopMenu 
+              menuItems={menuItems}
+              handleClick={handleClick} 
+            />
             <IconButton color="primary" onClick={toggleMenu} size="large">
               <Menu />
             </IconButton>
@@ -38,6 +41,7 @@ const Header = ({ styles, logo, ...props }) => {
         </Toolbar>
       </AppBar>
       <MobileMenu
+        menuItems={menuItems}
         open={menuOpen}
         handleClick={handleClick}
         toggleMenu={toggleMenu}
