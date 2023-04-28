@@ -1,5 +1,9 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _head = _interopRequireDefault(require("next/head"));
 var _excluded = ["title", "description", "keywords", "src"];
@@ -26,3 +30,5 @@ var Meta = function Meta(_ref) {
     content: src
   }));
 };
+var _default = Meta;
+exports.default = _default;

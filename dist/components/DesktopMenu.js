@@ -21,7 +21,6 @@ var DesktopMenu = function DesktopMenu(_ref) {
     menuItems = _ref.menuItems,
     handleClick = _ref.handleClick,
     rest = _objectWithoutProperties(_ref, _excluded);
-  console.log("DesktopMenu:", menuItems);
   return /*#__PURE__*/_react.default.createElement(_material.Box, {
     sx: _objectSpread(_objectSpread({}, sx.root), styles)
   }, menuItems && (menuItems === null || menuItems === void 0 ? void 0 : menuItems.map(function (item, i) {
