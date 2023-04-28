@@ -3,10 +3,15 @@ import { useResource } from "../index";
 import { Box, List, Grid } from "@mui/material";
 import { Carousel, LoadMore, SearchInput } from "../index";
 
+const DEFAULT_QUERY = {
+  page: 1,
+  perPage: 20
+}
+
 const FindManyList = ({
   url,
   variant = "list",
-  defaultQuery = {},
+  defaultQuery=DEFAULT_QUERY,
   renderItem,
   renderSkeleton,
   enableSearch = true,

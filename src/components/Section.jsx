@@ -1,16 +1,18 @@
-import React from "react";
 import { Box, Container } from "@mui/material";
 
 const Section = ({
   children,
-  container = false,
-  maxWidth = "lg",
+  maxWidth,
+  bgColor="background.paper",
   styles = {},
   ...props
 }) => {
   return (
-    <Box sx={{ ...sx.root, ...styles }}>
-      {container ? (
+    <Box sx={{ 
+      ...sx.root, 
+      backgroundColor: bgColor,
+      ...styles }}>
+      {maxWidth ? (
         <Container maxWidth={maxWidth}>{children}</Container>
       ) : (
         children
@@ -25,5 +27,5 @@ const sx = {
   root: {
     my: 2,
     width: "100%",
-  },
+  }
 };
