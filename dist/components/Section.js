@@ -5,10 +5,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _react = _interopRequireDefault(require("react"));
 var _material = require("@mui/material");
-var _excluded = ["children", "container", "maxWidth", "styles"];
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _excluded = ["children", "maxWidth", "bgColor", "styles"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -18,16 +16,17 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 var Section = function Section(_ref) {
   var children = _ref.children,
-    _ref$container = _ref.container,
-    container = _ref$container === void 0 ? false : _ref$container,
-    _ref$maxWidth = _ref.maxWidth,
-    maxWidth = _ref$maxWidth === void 0 ? "lg" : _ref$maxWidth,
+    maxWidth = _ref.maxWidth,
+    _ref$bgColor = _ref.bgColor,
+    bgColor = _ref$bgColor === void 0 ? "background.paper" : _ref$bgColor,
     _ref$styles = _ref.styles,
     styles = _ref$styles === void 0 ? {} : _ref$styles,
     props = _objectWithoutProperties(_ref, _excluded);
-  return /*#__PURE__*/_react.default.createElement(_material.Box, {
-    sx: _objectSpread(_objectSpread({}, sx.root), styles)
-  }, container ? /*#__PURE__*/_react.default.createElement(_material.Container, {
+  return /*#__PURE__*/React.createElement(_material.Box, {
+    sx: _objectSpread(_objectSpread({}, sx.root), {}, {
+      backgroundColor: bgColor
+    }, styles)
+  }, maxWidth ? /*#__PURE__*/React.createElement(_material.Container, {
     maxWidth: maxWidth
   }, children) : children);
 };

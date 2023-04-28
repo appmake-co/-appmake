@@ -8,7 +8,7 @@ var _react = _interopRequireDefault(require("react"));
 var _index = require("../../index");
 var _material = require("@mui/material");
 var _reactFeather = require("react-feather");
-var _excluded = ["errors", "label", "name", "value", "placeholder", "handleChange", "helperText", "textFieldProps"];
+var _excluded = ["errors", "label", "name", "value", "placeholder", "handleChange", "multiple", "freeSolo", "helperText", "textFieldProps"];
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
@@ -26,6 +26,10 @@ var ArrayInput = function ArrayInput(_ref) {
     value = _ref.value,
     placeholder = _ref.placeholder,
     handleChange = _ref.handleChange,
+    _ref$multiple = _ref.multiple,
+    multiple = _ref$multiple === void 0 ? true : _ref$multiple,
+    _ref$freeSolo = _ref.freeSolo,
+    freeSolo = _ref$freeSolo === void 0 ? true : _ref$freeSolo,
     helperText = _ref.helperText,
     _ref$textFieldProps = _ref.textFieldProps,
     textFieldProps = _ref$textFieldProps === void 0 ? {} : _ref$textFieldProps,
@@ -55,8 +59,8 @@ var ArrayInput = function ArrayInput(_ref) {
     color: "textSecondary",
     sx: sx.label
   }, label), /*#__PURE__*/_react.default.createElement(_material.Autocomplete, _extends({
-    multiple: true,
-    freeSolo: true,
+    multiple: multiple,
+    freeSolo: freeSolo,
     hasClearIcon: false,
     defaultValue: Array.isArray(value) && value || undefined,
     onChange: handleInputChange,
