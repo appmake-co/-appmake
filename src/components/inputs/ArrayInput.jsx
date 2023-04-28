@@ -21,6 +21,8 @@ const ArrayInput = ({
   value,
   placeholder,
   handleChange,
+  multiple=true,
+  freeSolo=true,
   helperText,
   textFieldProps = {},
   ...props
@@ -45,8 +47,8 @@ const ArrayInput = ({
         {label}
       </Typography>
       <Autocomplete
-        multiple
-        freeSolo
+        multiple={multiple}
+        freeSolo={freeSolo}
         hasClearIcon={false}
         defaultValue={(Array.isArray(value) && value) || undefined}
         onChange={handleInputChange}
