@@ -30,7 +30,7 @@ var MobileMenu = function MobileMenu(_ref) {
   }, /*#__PURE__*/_react.default.createElement(_material.List, {
     sx: sx.list,
     component: "nav"
-  }, menuItems === null || menuItems === void 0 ? void 0 : menuItems.map(function (_ref2, idx) {
+  }, menuItems && (menuItems === null || menuItems === void 0 ? void 0 : menuItems.map(function (_ref2, idx) {
     var value = _ref2.value,
       label = _ref2.label;
     return /*#__PURE__*/_react.default.createElement(_index.MenuItem, {
@@ -39,7 +39,7 @@ var MobileMenu = function MobileMenu(_ref) {
       label: label,
       handleClick: handleClick
     });
-  }))));
+  })))));
 };
 var _default = MobileMenu;
 exports.default = _default;

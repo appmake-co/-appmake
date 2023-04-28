@@ -19,7 +19,8 @@ const MobileMenu = ({ open, menuItems, toggleMenu, handleClick }) => {
         height="100%"
       >
         <List sx={sx.list} component="nav">
-          {menuItems?.map(({ value, label }, idx) => (
+          { menuItems && 
+            menuItems?.map(({ value, label }, idx) => (
             <MenuItem
               key={idx}
               value={value}
