@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect} from "react";
-import { ActionCableContext } from "context";
+import { ActionCableContext } from "../index";
 
 const useActionCable = ({ 
     channel, 
