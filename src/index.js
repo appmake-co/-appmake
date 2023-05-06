@@ -114,6 +114,7 @@ export { default as FieldRating } from "./components/fields/FieldRating";
 export { default as FieldVideo } from "./components/fields/FieldVideo";
 
 // Hooks
+export { default as useActionCable } from "./hooks/useActionCable";
 export { default as useAlerts } from "./hooks/useAlerts";
 export { default as useApi } from "./hooks/useApi";
 export { default as useAuth } from "./hooks/useAuth";
@@ -126,8 +127,10 @@ export { default as useResource } from "./hooks/useResource";
 export { default as useResponsive } from "./hooks/useResponsive";
 
 // Context
-export { default as ApiProvider } from "./context/ApiProvider";
+export { default as ActionCableContext } from "./context/ActionCableContext";
+export { default as ActionCableProvider } from "./context/ActionCableProvider";
 export { default as ApiContext } from "./context/ApiContext";
+export { default as ApiProvider } from "./context/ApiProvider";
 export { default as AuthContext } from "./context/AuthContext";
 export { default as AuthProvider } from "./context/AuthProvider";
 export { default as AppContext } from "./context/AppContext";
