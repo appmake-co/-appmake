@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SearchInput, FilterButton } from "../../index";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 
 const DataTableToolbar = ({
   loading,
@@ -16,14 +16,6 @@ const DataTableToolbar = ({
 }) => {
   const [queryParams, setQueryParams] = useState(query);
   const [badgeCount, setBadgeCount] = useState(0);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setQueryParams({
-      ...queryParams,
-      [name]: value,
-    });
-  };
 
   useEffect(() => {
     if (query?.filters) {

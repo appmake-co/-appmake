@@ -47,11 +47,8 @@ const TableView = ({
     query,
     setQuery,
     page,
-    perPage,
     numPages,
     totalCount,
-    loadMore,
-    sortBy,
     sortDirection,
   } = useResource({
     url,

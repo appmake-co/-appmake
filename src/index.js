@@ -15,6 +15,7 @@ export { default as GridView } from "./components/GridView";
 export { default as GridViewItem } from "./components/GridViewItem";
 export { default as GridViewSkeleton } from "./components/GridViewSkeleton";
 export { default as Header } from "./components/Header";
+export { default as IconLoader } from "./components/IconLoader";
 export { default as ImageCarousel } from "./components/carousel/ImageCarousel";
 export { default as ImageCarouselSkeleton } from "./components/ImageCarouselSkeleton";
 export { default as Loader } from "./components/Loader";
