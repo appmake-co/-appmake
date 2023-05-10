@@ -465,6 +465,12 @@ Object.defineProperty(exports, "Header", {
     return _Header.default;
   }
 });
+Object.defineProperty(exports, "IconLoader", {
+  enumerable: true,
+  get: function get() {
+    return _IconLoader.default;
+  }
+});
 Object.defineProperty(exports, "ImageCarousel", {
   enumerable: true,
   get: function get() {
@@ -770,6 +776,7 @@ var _GridView = _interopRequireDefault(require("./components/GridView"));
 var _GridViewItem = _interopRequireDefault(require("./components/GridViewItem"));
 var _GridViewSkeleton = _interopRequireDefault(require("./components/GridViewSkeleton"));
 var _Header = _interopRequireDefault(require("./components/Header"));
+var _IconLoader = _interopRequireDefault(require("./components/IconLoader"));
 var _ImageCarousel = _interopRequireDefault(require("./components/carousel/ImageCarousel"));
 var _ImageCarouselSkeleton = _interopRequireDefault(require("./components/ImageCarouselSkeleton"));
 var _Loader = _interopRequireDefault(require("./components/Loader"));
