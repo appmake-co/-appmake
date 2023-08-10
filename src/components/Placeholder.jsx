@@ -3,15 +3,7 @@ import { Box, Avatar, Typography } from "@mui/material";
 
 const Placeholder = ({ icon, title, subtitle, actions, ...props }) => {
   return (
-    <Box
-      p={2}
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      height="100%"
-      width="100%"
-    >
+    <Box sx={ sx.root }>
       {icon && <Avatar sx={sx.avatar}>{icon}</Avatar>}
       <Typography variant="subtitle1" mt={2}>
         {title}
@@ -26,6 +18,15 @@ const Placeholder = ({ icon, title, subtitle, actions, ...props }) => {
 export default Placeholder;
 
 const sx = {
+  root: {
+    p: 2,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100%",
+    width: "100%"
+  },
   avatar: {
     height: "50px",
     width: "50px",
